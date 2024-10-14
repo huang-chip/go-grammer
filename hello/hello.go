@@ -4,7 +4,10 @@ import "fmt"
 
 func Hello(name string) string {
 	// return "Hello, world!"
-	return "Hello " + name
+	if name == "" {
+		name = "World"
+	}
+	return "Hello, " + name
 }
 
 func main() {
